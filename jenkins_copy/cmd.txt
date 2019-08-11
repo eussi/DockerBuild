@@ -1,0 +1,3 @@
+docker run --privileged -p 8080:8080 --name jenkins -d  eussi/frequently:jenkins
+
+docker exec -ti --env COLUMNS=`tput cols` --env LINES=`tput lines` jenkins /bin/bash
